@@ -5,6 +5,7 @@ final shoppingListProvider =
     StateNotifierProvider<ShoppingListNotifier, List<ShoppingItemModel>>(
         (ref) => ShoppingListNotifier());
 
+// StateNotifier는 무조건 class로 선언해야 한다.
 class ShoppingListNotifier extends StateNotifier<List<ShoppingItemModel>> {
   ShoppingListNotifier()
       : super([
