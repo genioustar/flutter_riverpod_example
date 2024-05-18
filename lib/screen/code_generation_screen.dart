@@ -59,7 +59,8 @@ class CodeGenerationScreen extends ConsumerWidget {
                   ],
                 );
               },
-              child: const MyButtonWidget(),
+              child:
+                  const MyButtonWidget(), // 랜더링할때 성능이 아주 많이 필요한 경우 이렇게 한번만 그리게 할 수 있음!
             ),
           ),
           Row(
