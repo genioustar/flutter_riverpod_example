@@ -15,7 +15,7 @@ class StreamProviderScreen extends ConsumerWidget {
         child: state.when(
           data: (data) => Text(data.toString()),
           error: (error, stackTrace) => Text('Error: $error'),
-          loading: () => CircularProgressIndicator(),
+          loading: () => const CircularProgressIndicator(),
         ),
       ),
     );

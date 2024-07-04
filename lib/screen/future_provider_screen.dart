@@ -20,12 +20,11 @@ class FutureProviderScreen extends ConsumerWidget {
               data.toString(),
               textAlign: TextAlign.center,
             ),
-            error: (Object error, StackTrace stackTrace) {
-              return Text('Error: $error');
-            },
-            loading: () {
-              return Center(child: const CircularProgressIndicator());
-            },
+            error: (Object error, StackTrace stackTrace) =>
+                Text('Error: $error'),
+            loading: () => const Center(
+              child: CircularProgressIndicator(),
+            ),
           ),
         ],
       ),
